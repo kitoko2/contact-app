@@ -1,0 +1,15 @@
+{
+  "unknown_error": "An error has occurred. Please try again later.",
+  "server_error": "A server error has occurred. Please try again later.",
+  "network_error": "No internet connection. Please check your connection and try again.",
+  "timeout_error": "The request has timed out. Please try again.",
+  "cache_error": "Error accessing local data. Please try again.",
+  "try_again": "Try again",
+  "mes_contacts": "My contacts",
+  "email": "Email",
+  "telephone_fixe": "Phone",
+  "telephone_mobile": "Mobile",
+  "adresse": "Address",
+  "continuer": "Continue",
+  "description_onboarding": "Our mission is to help you manage your contacts."
+}
