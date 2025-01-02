@@ -4,23 +4,13 @@ import 'package:contact_app/presentation/shared/second_button.dart';
 import 'package:contact_app/presentation/shared/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class ErrorPage extends StatefulWidget {
+class ErrorPage extends StatelessWidget {
   final String title;
-  final String description;
   final VoidCallback onTap;
+  const ErrorPage({super.key, required this.title, required this.onTap});
 
-  const ErrorPage(
-      {super.key,
-      required this.title,
-      required this.description,
-      required this.onTap});
-
-  @override
-  State<ErrorPage> createState() => _ErrorPageState();
-}
-
-class _ErrorPageState extends State<ErrorPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -35,9 +25,9 @@ class _ErrorPageState extends State<ErrorPage> {
             ),
             UnconstrainedBox(
               child: Container(
-                constraints: BoxConstraints(maxWidth: 250),
+                constraints: const BoxConstraints(maxWidth: 250),
                 child: Text(
-                  widget.title,
+                  title,
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontWeight: FontWeight.w500),
                 ),
@@ -46,10 +36,10 @@ class _ErrorPageState extends State<ErrorPage> {
             16.verticalSpace,
             UnconstrainedBox(
               child: Container(
-                constraints: BoxConstraints(maxWidth: 250),
+                constraints: const BoxConstraints(maxWidth: 250),
                 child: SecondButton(
-                  text: "Réessayer",
-                  onPressed: widget.onTap,
+                  text: AppLocalizations.of(context)!.try_again,
+                  onPressed: onTap,
                   width: double.infinity,
                 ),
               ),

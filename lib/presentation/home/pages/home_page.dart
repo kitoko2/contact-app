@@ -96,7 +96,6 @@ class _HomePageState extends State<HomePage> {
           if (state.isFailure && state.contacts.isEmpty) {
             return ErrorPage(
                 title: state.error ?? "Une erreur est survenue",
-                description: "error",
                 onTap: _loadContacts);
           }
 
