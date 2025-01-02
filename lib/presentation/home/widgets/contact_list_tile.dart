@@ -57,7 +57,7 @@ class ContactListTile extends StatelessWidget {
           onTap: () {
             context.pushNamed(
               DetailsContactPage.routeName,
-              extra: {"contatct": contact},
+              extra: {"contact": contact},
             );
           },
         ),

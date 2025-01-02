@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:contact_app/core/theme/app_colors.dart';
 import 'package:contact_app/domain/entities/contact_entity.dart';
-import 'package:contact_app/presentation/home/pages/error_page.dart';
 import 'package:contact_app/presentation/shared/extension.dart';
 import 'package:contact_app/presentation/shared/uril_laucher_utils.dart';
 import 'package:contact_app/presentation/shared/utils.dart';

@@ -59,7 +59,7 @@ class AppRouter {
             builder: (context, state) {
               final Map<String, dynamic> extra =
                   state.extra! as Map<String, dynamic>;
-              final contact = extra['contatct'] as ContactEntity;
+              final contact = extra['contact'] as ContactEntity;
               return DetailsContactPage(contact: contact);
             },
           ),
