@@ -43,13 +43,19 @@ class ContactListTile extends StatelessWidget {
               2.verticalSpace,
               Row(
                 children: [
-                  const Icon(Icons.phone, size: 16),
-                  4.horizontalSpace,
-                  Text(contact.phone),
+                  Flexible(
+                    child: _customTilePhone(
+                      Icons.phone,
+                      contact.phone,
+                    ),
+                  ),
                   16.horizontalSpace,
-                  const Icon(Icons.phone_android, size: 16),
-                  4.horizontalSpace,
-                  Text(contact.cell),
+                  Flexible(
+                    child: _customTilePhone(
+                      Icons.phone_android,
+                      contact.cell,
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -66,6 +72,16 @@ class ContactListTile extends StatelessWidget {
           height: 1,
           color: Colors.grey.shade200,
         )
+      ],
+    );
+  }
+
+  Widget _customTilePhone(IconData icon, String phone) {
+    return Row(
+      children: [
+        Icon(icon, size: 16),
+        4.horizontalSpace,
+        Flexible(child: Text(phone)),
       ],
     );
   }

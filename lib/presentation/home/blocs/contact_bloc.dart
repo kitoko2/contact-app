@@ -180,7 +180,7 @@ class ContactBloc extends Bloc<ContactEvent, ContactState> {
             status: ContactStatus.loaded,
             contacts: contacts,
             error: null,
-            currentPage: 1,
+            currentPage: initialPage,
             hasReachedMax: contacts.isEmpty,
           ));
         },

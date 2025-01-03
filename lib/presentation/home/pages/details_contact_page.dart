@@ -31,7 +31,7 @@ class _DetailsContactPageState extends State<DetailsContactPage> {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
-                '${widget.contact.firstName} ${widget.contact.lastName}',
+                '${widget.contact.firstName} ${widget.contact.lastName} ',
                 style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
